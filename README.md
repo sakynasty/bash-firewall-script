@@ -1,4 +1,4 @@
-# Block Programs from Internet using Firewall
+# Block Programs from Internet (In/out) using Firewall
 
 This script helps you block internet access for specific programs using the Windows firewall automatically.
 
@@ -23,39 +23,3 @@ This script helps you block internet access for specific programs using the Wind
 - The rule's name, direction, and program path are specified in the command.
 - The script includes the `setlocal enableextensions` command to enable extensions and `cd /d "%~dp0"` to change to the script's directory.
 - A `pause` command is included so you can review the results before closing the command prompt.
-
-## Flowchart
-
-```mermaid
-graph LR
-
-subgraph Initialize
-    A[Set Echo Off]
-    B[Enable Local Extensions]
-    C[Change Directory]
-end
-
-subgraph Loop
-    D[Loop through files *.exe]
-    E[Add Outbound Firewall Rule]
-    F[Add Inbound Firewall Rule]
-end
-
-G[Display Pause Message]
-
-A --> B --> C --> D --> E --> F --> D
-D -->|Done| G
-```
-
-Note: Be cautious when using this script, as it blocks all internet access for the specified programs. Make sure to have backup copies of the files you want to block.
-
-## Support
-
-You can support me by buy me a coffee if u like to.
-
-<div align="left">
-<!--   <h4>And you can also support me by <a href="https://www.buymeacoffee.com/azzar" target="_blank">buying me coffee</a></h4> -->
-  <a href="https://www.buymeacoffee.com/azzar" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 42px !important;width: 151.9px !important; margin-top: 50px !important;">
-  </a>
-</div>
